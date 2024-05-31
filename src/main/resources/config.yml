@@ -1,0 +1,135 @@
+mysql:
+  hostname: "127.0.0.1"
+  port: "3306"
+  database: "levels"
+  username: "root"
+  password: "1337"
+  table: "levels"
+  table-claimed: "levels_claimed"
+  minimum-connections: 10
+  maximum-connections: 10
+  connection-timeout: 5000
+  properties:
+    useSSL: false
+    serverTimezone: "Europe/Bucharest"
+
+help-message:
+  - "&r     &e&lMCGO-Levels &8| &fVersion &61.0.0"
+  - "&r"
+  - "&8* &e/poziomy dodajexp {player} {liczba} &8- &7Add experience to player"
+  - "&8* &e/poziomy ustawexp {player} {liczba} &8- &7Set experience of player"
+  - "&8* &e/poziomy usunexp {player} {liczba} &8- &7Remove experience from player"
+  - "&8* &e/poziomy ustawpoziom {player} {liczba} &8- &7Set the level of a player"
+  - "&8* &e/poziom <player> &8- &7Check a player's statistics (or own)"
+  - "&r"
+no-permission: "&8» &cYou don't have permissions"
+not-a-console-command: "&8» &cYou must be a player to use this command."
+not-enough-arguments: "&8» &cCommand usage incorrect! Check help command for more info."
+invalid-player: "&8» &cThis player does not exist in the database."
+symbol: '■'
+color-completed: '&a'
+color-empty: '&7'
+added-exp: '&8» &fAdded &e{PLAYER} &6{EXP}&f experience.'
+added-exp-notify: '&8» &fYou got &e{EXP}&f experience.'
+set-exp: '&8» &fSet &e{PLAYER} &6{EXP}&f experience.'
+set-exp-notify: '&8» &fYour has been set &e{EXP}&f experience.'
+remove-exp: '&8» &fRemoved from &e{PLAYER} &e{EXP}&f experience.'
+remove-exp-notify: '&8» &6{EXP}&f of your experience got removed.'
+set-level: '&8» &fSet level of &e{PLAYER}&f to &6{LEVEL}&f.'
+set-level-notify: '&8» &fYour level is now &e{LEVEL}&f.'
+Stats:
+  Self:
+    - '&r'
+    - '&8» &6%player_name% &8- %levels_color%%levels_current%'
+    - '&8» &fEXP: &e%levels_current_exp%'
+    - '&8» %levels_progres_symbol%'
+    - '&8» &fEXP to level up: &e%levels_need_exp%'
+    - '&r'
+  Self-max-level:
+    - '&8»'
+    - "&8» &6%player_name%&f, you're at max level!"
+    - '&8» &e%levels_current_exp%'
+    - '&8»'
+  Other:
+    - '&8»'
+    - '&8» %player_name% %levels_color%%levels_current%'
+    - '&8» %levels_current_exp%'
+    - '&8» %levels_progres_symbol%'
+    - '&8» %levels_need_exp%'
+    - '&8»'
+  Other-max-level:
+    - '&8»'
+    - "&8» &6%player_name%&f is at max level!"
+    - '&8» &e%levels_current_exp%'
+    - '&8»'
+Level-up:
+  Title: '&b&lLEVEL &f&lUP' #Message title
+  Subtitle: '&b&lLEVEL &f&lUP' #Message subtitle
+  Actionbar: '&b&lLEVEL &f&lUP' #Message actionbar
+  Click: "&6&lCLICK HERE"
+  Message: #A clickable message that opens the rewards menu
+    - '&r'
+    - '&8» &6%player_name%&f you have been promoted to level &e{LEVEL}&f!'
+    - '&r'
+    - '&8» {CLICK} &fto claim your reward.'
+    - ''
+
+GUI:
+  GuiName: 'LEVELS {page}' #Gui name
+  Rows: 6 #Number of rows
+  Locked:
+    Item: EXPLOSIVE_MINECART #item for a locked reward
+    Lore: #lore to be added to configuration lore rewards.yml
+    - "&8You can't claim this reward!"
+  Unlocked:
+    Item: EXPLOSIVE_MINECART #item for unlocked reward
+    Lore: #lore to be added to configuration lore rewards.yml
+    - 'Click to claim'
+  Claimed:
+    Item: HOPPER_MINECART #item for the claimed reward
+    Lore: #lore to be added to configuration lore rewards.yml
+    - "You've already claimed this reward!"
+  Previous: #previous page of rewards
+    Item: ARROW
+    Name: 'Previous page'
+    Lore:
+    - 'Previous page'
+  Next: #next page of rewards
+    Item: ARROW
+    Name: 'Next page'
+    Lore:
+    - 'Next page'
+  Fillers:
+    FillerTop:
+      item: STAINED_GLASS_PANE
+      data: 4
+      name: '&r'
+    FillerBottom:
+      item: STAINED_GLASS_PANE
+      data: 4
+      name: '&r'
+    Filler:
+      item: STAINED_GLASS_PANE
+      data: 7
+      name: '&r'
+      slots:
+        - 10
+        - 19
+        - 28
+        - 21
+        - 30
+        - 39
+        - 14
+        - 23
+        - 32
+        - 25
+        - 34
+        - 43
+  CustomItems:
+    1:
+      item: POTION
+      slot: 8
+      name: '&6TEST'
+      lore: 'CLICK HERE RIGHT OR LEFT'
+      commands:
+        - 'say {PLAYER} test'

@@ -1,0 +1,10 @@
+DefaultColor: '&7'
+DefaultSymbol: '❋'
+Colors:
+  10-20: '&f'
+  21-50: '&c'
+  51-300: '&4'
+Symbols:
+  10-20: '☩'
+  21-50: '✸'
+  51-300: '✦'

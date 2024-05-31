@@ -1,0 +1,76 @@
+Rewards:
+  1:
+    Displayname: 'Poziom 2' #The name that will be displayed on the item in the gui if the reward has not been claimed.
+    Level: 2 #Required level for the award to be received.
+    Slot: 9
+    Page: 1
+    Lore: #The lore that will be displayed on the item in the gui if the reward has not been claimed.
+      - 'Nagroda za poziom: 2!'
+      - ''
+      - '50 POINTS'
+      - '50 EXP'
+    add-points: 50 #Support PlayerPoints #Number of points that will be added to player by api to PlayerPoints plugin, -1 disables
+    add-exp: 50 #Number of experience that will be added to the player, -1 disables
+    message: "Stuff here"
+    Commands: #Other console commands
+      - 'say {PLAYER} yesss'
+  2:
+    Displayname: 'Poziom 3' #The name that will be displayed on the item in the gui if the reward has not been claimed.
+    Level: 3 #Required level for the award to be received.
+    Slot: 18
+    Page: 1
+    Lore: #The lore that will be displayed on the item in the gui if the reward has not been claimed.
+      - 'Nagroda za poziom: 3!'
+      - ''
+      - '50 POINTS'
+      - '50 EXP'
+    add-points: 50 #Support PlayerPoints #Number of points that will be added to player by api to PlayerPoints plugin, -1 disables
+    add-exp: 50 #Number of experience that will be added to the player, -1 disables
+    message: "Stuff here"
+    Commands: #Other console commands
+      - 'say {PLAYER} yesss'
+  3:
+    Displayname: 'Poziom 4' #The name that will be displayed on the item in the gui if the reward has not been claimed.
+    Level: 4 #Required level for the award to be received.
+    Slot: 27
+    Page: 1
+    Lore: #The lore that will be displayed on the item in the gui if the reward has not been claimed.
+      - 'Nagroda za poziom: 4!'
+      - ''
+      - '50 POINTS'
+      - '50 EXP'
+    add-points: 50 #Support PlayerPoints #Number of points that will be added to player by api to PlayerPoints plugin, -1 disables
+    add-exp: 50 #Number of experience that will be added to the player, -1 disables
+    message: "Stuff here"
+    Commands: #Other console commands
+      - 'say {PLAYER} yesss'
+  4:
+    Displayname: 'Poziom 5' #The name that will be displayed on the item in the gui if the reward has not been claimed.
+    Level: 5 #Required level for the award to be received.
+    Slot: 36
+    Page: 1
+    Lore: #The lore that will be displayed on the item in the gui if the reward has not been claimed.
+      - 'Nagroda za poziom: 5!'
+      - ''
+      - '50 POINTS'
+      - '50 EXP'
+    add-points: 50 #Support PlayerPoints #Number of points that will be added to player by api to PlayerPoints plugin, -1 disables
+    add-exp: 50 #Number of experience that will be added to the player, -1 disables
+    message: "Stuff here"
+    Commands: #Other console commands
+      - 'say {PLAYER} yesss'
+  5:
+    Displayname: 'Poziom 6' #The name that will be displayed on the item in the gui if the reward has not been claimed.
+    Level: 6 #Required level for the award to be received.
+    Slot: 37
+    Page: 1
+    Lore: #The lore that will be displayed on the item in the gui if the reward has not been claimed.
+      - 'Nagroda za poziom: 6!'
+      - ''
+      - '50 POINTS'
+      - '50 EXP'
+    add-points: 50 #Support PlayerPoints #Number of points that will be added to player by api to PlayerPoints plugin, -1 disables
+    add-exp: 50 #Number of experience that will be added to the player, -1 disables
+    message: "Stuff here"
+    Commands: #Other console commands
+      - 'say {PLAYER} yesss'

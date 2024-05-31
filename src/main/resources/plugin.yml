@@ -1,0 +1,25 @@
+name: MCGO-Levels
+version: '${project.version}'
+main: ro.kmagic.mcgolevels.MCGOLevels
+softdepend: [ PlaceholderAPI, PlayerPoints ]
+authors: [ kMagic ]
+
+commands:
+  poziomy:
+    description: Main Command
+  poziom:
+    description: Command for checking statistics
+
+permissions:
+  poziomy.use:
+    description: Use the main command
+  poziomy.dodajexp:
+    description: Add experience
+  poziomy.ustawexp:
+    description: Set experience
+  poziomy.usunexp:
+    description: Remove experience
+  poziomy.ustawpoziom:
+    description: Set the level of a player
+  poziom.use:
+    description: Check statistics
